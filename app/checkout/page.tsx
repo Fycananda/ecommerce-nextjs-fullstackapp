@@ -34,7 +34,7 @@ export default function CheckoutPage() {
             {/* Kontainer Utama List Item */}
             <div className="space-y-6">
                 {items.map((item) => (
-                    <div key={item.id} className="grid grid-cols-2 items-center pb-6 border-b">
+                    <div key={item.id} className="flex flex-col md:grid md:grid-cols-2 items-center pb-6 border-b gap-8">
 
                         {/* Kolom 1: Info Produk */}
                         <div>
@@ -43,7 +43,7 @@ export default function CheckoutPage() {
                         </div>
 
                         {/* Kolom 2: Kontrol Quantity & Subtotal Harga */}
-                        <div className="flex items-center justify-between">
+                        <div className="grid gap-4 md:flex items-center justify-between">
 
                             <div className="flex items-center gap-4 bg-gray-50 p-2 rounded-lg">
                                 <Button
@@ -63,7 +63,7 @@ export default function CheckoutPage() {
                                 </Button>
                             </div>
 
-                            <div className="text-right">
+                            <div className="text-center">
                                 <p className="font-semibold text-lg">
                                     {formatJPY(item.price * item.quantity)}
                                 </p>

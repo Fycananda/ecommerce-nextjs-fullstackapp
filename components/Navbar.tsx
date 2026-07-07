@@ -63,7 +63,7 @@ export const Navbar = () => {
                 </div>
             </div>
             {mobileOpen &&
-                <nav className="md:hidden shadow-md">
+                <nav className="md:hidden border-t shadow-md">
                     <ul className="flex flex-col p-4 space-y-2">
                         <li>
                             <Link href={"/"} className="block hover:text-blue-600">Home</Link>
